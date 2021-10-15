@@ -1,0 +1,14 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | RIVERA-PC {% endblock %}
+
+{% block branding %}
+
+{% load static %}
+
+
+    <p>Sitio de Administracion de Inventario</p>
+    <h1 id="site-name"><a href="{% url 'admin:index' %}">RIVERA-PC </a></h1> 
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
